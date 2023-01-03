@@ -1,0 +1,26 @@
+.newpost-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  background-color: white;
+  width: fit-content;
+}
+.newpost-container > h1 {
+  margin-left: 0;
+}
+
+.newpost-container > div {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.newpost-container > div > img {
+  border-radius: 50%;
+}
+
+.newpost-container > div > span {
+  margin-left: 20px;
+  color: #9999a4;
+}

@@ -1,0 +1,32 @@
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  width: 200px;
+  height: 450px;
+  background-color: white;
+}
+
+.container > h1 {
+  margin-left: 0;
+  font-size: 1.4em;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  margin: 0;
+  max-width: 100%;
+  max-height: 34%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+}
