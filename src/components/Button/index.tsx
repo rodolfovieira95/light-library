@@ -1,52 +1,33 @@
 import React from "react";
-import "./style.css";
 
-interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: "small" | "medium" | "large";
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
+import { RootButton } from "./style";
+
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: "primary" | "secondary" | "ghost" | "link";
+  size?: "xs" | "sm" | "md" | "lg";
+  children?: React.ReactNode;
+  bgColor?: string;
+  textColor?: string;
+  borderColor?: string;
+  fullWidth?: boolean;
   onClick?: () => void;
 }
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({
-  primary = false,
-  size = "medium",
-  backgroundColor,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+export const Button = ({ children, ...props }: ButtonProps) => {
+  const widthProp = props.fullWidth ? { width: "100%" } : {};
+
   return (
-    <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-      style={{ backgroundColor }}
+    <RootButton
       {...props}
+      style={{
+        backgroundColor: props.bgColor,
+        color: props.textColor,
+        borderColor: props.borderColor,
+        ...widthProp,
+      }}
     >
-      {label}
-    </button>
+      {children}
+    </RootButton>
   );
 };
