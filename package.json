@@ -1,6 +1,6 @@
 {
   "name": "light-library",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
@@ -22,6 +22,8 @@
     "@types/react-dom": "^18.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.6",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -40,10 +42,15 @@
     "@storybook/react": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
     "@storybook/theming": "^6.5.15",
+    "@types/styled-components": "^5.1.26",
     "babel-plugin-named-exports-order": "^0.0.2",
     "parcel": "^2.8.3",
     "prop-types": "^15.8.1",
+    "storybook-addon-styled-component-theme": "^2.0.0",
     "webpack": "^5.75.0"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "eslintConfig": {
     "extends": [
