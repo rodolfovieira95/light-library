@@ -27,8 +27,8 @@ const lgProps = css`
 // Variants Definitions
 const primaryProps = css`
   border: none;
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme?.colors?.primary};
+  color: ${({ theme }) => theme?.colors?.background};
 `;
 
 const secondaryProps = css`
