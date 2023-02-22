@@ -1,10 +1,19 @@
-# Getting Started with Ligh Library
+# Getting Started with Light Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal React Light Library. With this lib you may be able to use components in your projects simply by importing and using it. You may be able to create a theme with styled-components and have the components looking good in your context.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn build`
+
+Builds the app for production to the `dist` folder.\
+It correctly bundles all the components with [Parcel](https://parceljs.org/).
+
+### `yarn build storybook`
+
+It builds the storybook for production in `storybook-static` folder.
 
 ### `yarn storybook`
 
@@ -13,12 +22,6 @@ Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
 The page will reload if you make edits.\
 
-### `yarn build`
+### `yarn test`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Runs the tests with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/).
