@@ -4,12 +4,12 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { PostModal } from ".";
 
 export default {
-  title: "Example/PostModal",
+  title: "Components/PostModal",
   component: PostModal,
   parameters: {
     layout: "fullscreen",
   },
-} as ComponentMeta<typeof PostModal>;
+};
 
 const Template: ComponentStory<typeof PostModal> = (args) => <PostModal />;
 

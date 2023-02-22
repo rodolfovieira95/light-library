@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { NewPost } from ".";
 
 export default {
-  title: "Example/NewPost",
+  title: "Components/NewPost",
   component: NewPost,
   parameters: {
     layout: "fullscreen",

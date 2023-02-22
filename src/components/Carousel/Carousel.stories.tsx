@@ -5,7 +5,7 @@ import { Carousel } from ".";
 import { CardProps } from "../Card";
 
 export default {
-  title: "Example/Carousel",
+  title: "Components/Carousel",
   component: Carousel,
   parameters: {
     layout: "fullscreen",
