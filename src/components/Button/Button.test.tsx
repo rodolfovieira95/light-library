@@ -4,7 +4,11 @@ import { render, screen } from "@testing-library/react";
 import { Button } from ".";
 
 test("renders button", () => {
-  render(<Button label="Button" />);
-  const buttonElement = screen.getByText(/Button/i);
-  expect(buttonElement).toBeInTheDocument();
+  render(
+    <Button size="sm" variant="primary">
+      Button Text
+    </Button>
+  );
+  const buttonElement = screen.getByText("Button Text");
+  expect(buttonElement).not.toBeNull();
 });
